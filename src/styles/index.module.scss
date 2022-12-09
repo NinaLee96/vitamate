@@ -1,0 +1,61 @@
+html,
+body {
+  // makes background image full screen
+  margin: 0;
+  padding: 0;
+  background-image: url(../assets/abstract.jpg);
+
+  .backdrop {
+    background-image: url(../assets/abstract.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: repeat;
+    z-index: -3;
+  }
+
+  // for screens > 500px
+  @media screen and (min-width: 500px) {
+    .backdrop {
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      background-size: cover;
+      background-repeat: repeat;
+      background-image: url(../assets/abstract.jpg);
+      z-index: -3;
+    }
+  }
+
+  .container {
+    // padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "box"
+      "blob";
+    .title {
+      grid-area: "title";
+      height: 200px;
+    }
+    .box {
+      grid-area: "box";
+      height: 400px;
+    }
+    .blob {
+      grid-area: "blob";
+      height: 400px;
+    }
+  }
+  .item-landing {
+    grid-area: "landing";
+  }
+}
+
+.font {
+  font-family: sans-serif;
+  // color: white;
+}

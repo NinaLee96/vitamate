@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  max-width: 380px;
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 140px 20px 100px;
+
+  .title {
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+  }
+}
